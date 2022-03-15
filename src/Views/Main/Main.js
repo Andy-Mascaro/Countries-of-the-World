@@ -1,25 +1,28 @@
 import React from 'react';
-import { useEffect, useState} from 'react/cjs/react.production.min';
+import { useEffect, useState} from 'react';
+import { fetchCountries } from '../../services/Country';
 import './Main.css';
+import CountryCard from '../../Components/CountryCard/CountryCard';
 
 export default function Main() {
-  return (
+ (
     
-    const [country, setCountry] = useState([]);
+    const [setCountry] = useState([]);
 
     useEffect(() => {
         const fetch = async () => {
         const resp = await fetchCountries();
-        setCountries(resp);
+        setCountry(resp);
         };
         fetch();
     }, []);
-    // return (
-    //     <div className="main">main
-    //     {countries.map((item) => (
-    //      <CountryCard  key={item.id} 
-    //     ))}
-    //     </div>
+
+    return (
+        div className="main">main
+          {CountryCard.map((item) => (
+          <CountryCard  key={name.id} name={name.name} iso2={iso.iso}
+         
+        </div>
     )
     })
 

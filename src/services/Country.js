@@ -1,7 +1,7 @@
 import { client, checkError } from './client';
-import './County.css';
 
-export async function fetchCountry() {
+
+export async function fetchCountries() {
   const resp = await client.from('countries').select('*');
   return checkError(resp);
 }

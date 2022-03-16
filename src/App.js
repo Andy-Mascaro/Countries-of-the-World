@@ -7,9 +7,9 @@ import Main from './Views/Main/Main';
 function App() {
   return (
     <section className="main">
-      <Header />
+      {/* <Header /> */}
       <Main />
-      <Footer />
+      {/* <Footer /> */}
     </section>
   );
 }

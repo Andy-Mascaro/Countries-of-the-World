@@ -17,7 +17,7 @@ export default function Main() {
   return (
     <div className="main">main
       {Country.map((item) => (
-        <CountryCard key={item.id} name={item.name} iso2={item.iso} /> 
+        <CountryCard key={item.id} name={item.name} iso2={item.iso2} /> 
       ))}
     </div>
     

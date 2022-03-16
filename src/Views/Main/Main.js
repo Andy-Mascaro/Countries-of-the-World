@@ -15,14 +15,11 @@ export default function Main() {
   }, []);
 
   return (
-    <div className="main">main
+    <div className="main">
       {Country.map((item) => (
         <CountryCard key={item.id} name={item.name} iso2={item.iso2} /> 
       ))}
     </div>
-    
-    
 
-    
   );
 }

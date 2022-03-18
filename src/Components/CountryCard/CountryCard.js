@@ -10,7 +10,7 @@ export default function CountryCard({ name, iso2 }) {
         <div className="iso2">{iso2}</div>
       </div>
       <div className="image">
-        <img src={`https://flagcdn.com/16x12/${iso}.png`}/>
+        <img src={`https://flagcdn.com/24x18/${iso}.png`}/>
 
       </div>
     </div>
